@@ -1,0 +1,356 @@
+.preset-manager {
+  background: #23272b;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  border: 1.5px solid #393939;
+}
+
+.preset-header {
+  color: #ffe082;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-bottom: 1.5px solid #393939;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.category-select {
+  width: 100%;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  font-family: 'Minecraft', monospace;
+  font-size: 12px;
+}
+
+.preset-save-section {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.preset-name-input {
+  flex: 1;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 4px 8px;
+  font-family: 'Minecraft', monospace;
+  font-size: 12px;
+}
+
+.yaml-section {
+  margin-bottom: 8px;
+}
+
+.yaml-input {
+  width: 100%;
+  height: 80px;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 4px 8px;
+  font-family: 'Minecraft', monospace;
+  font-size: 12px;
+  resize: none;
+  margin-bottom: 4px;
+}
+
+.yaml-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.minecraft-btn, .preset-form button, .preset-actions button {
+  background: linear-gradient(90deg, #3a3a3a 60%, #444 100%);
+  color: #ffe082;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.minecraft-btn:hover, .preset-form button:hover, .preset-actions button:hover {
+  background: #ffe082;
+  color: #23272b;
+}
+
+.minecraft-btn.save-btn {
+  background: #2d7d32;
+}
+
+.minecraft-btn.save-btn:hover {
+  background: #388e3c;
+}
+
+.minecraft-btn.load-btn {
+  background: #388e3c;
+  padding: 2px 8px;
+  min-width: 60px;
+}
+
+.minecraft-btn.delete-btn {
+  background: #c62828;
+  padding: 2px 8px;
+  min-width: 60px;
+}
+
+.presets-list {
+  background: #2d2d2d;
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+.preset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  margin-bottom: 4px;
+  background: #363636;
+  border: 1px solid #444;
+}
+
+.preset-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preset-name {
+  color: #fff;
+  font-size: 12px;
+}
+
+.preset-actions {
+  display: flex;
+  gap: 4px;
+}
+
+/* Scrollbar styling */
+.presets-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.presets-list::-webkit-scrollbar-track {
+  background: #23272b;
+}
+
+.presets-list::-webkit-scrollbar-thumb {
+  background: #393939;
+  border-radius: 6px;
+}
+
+.presets-list::-webkit-scrollbar-thumb:hover {
+  background: #ffe082;
+}
+
+/* Plugin Integrations */
+.plugin-integrations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: #363636;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* External Menus */
+.external-menus {
+  padding: 12px;
+  background: #363636;
+  border-radius: 4px;
+}
+
+.file-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.external-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.external-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+.external-menu-item span {
+  color: #e0e0e0;
+}
+
+.external-menu-item button {
+  padding: 4px 12px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.external-menu-item button:hover {
+  background: #43A047;
+}
+
+/* Preset Form */
+.preset-form {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.preset-form input,
+.preset-form select {
+  padding: 8px;
+  background: #363636;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.preset-form input {
+  flex: 2;
+}
+
+.preset-form select {
+  flex: 1;
+}
+
+.preset-form button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.preset-form button:hover {
+  background: #43A047;
+}
+
+/* Import/Export Section */
+.import-export-section {
+  display: none !important;
+}
+
+/* Preset List */
+.preset-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.preset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #363636;
+  border-radius: 4px;
+}
+
+.preset-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.preset-name {
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.preset-category {
+  font-size: 12px;
+  color: #888;
+}
+
+.preset-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.preset-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.preset-actions button {
+  padding: 4px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.preset-actions button:first-child {
+  background: #2196F3;
+}
+
+.preset-actions button:last-child {
+  background: #F44336;
+}
+
+.preset-actions button:hover {
+  filter: brightness(1.1);
+}
+
+/* Scrollbar Styling */
+.external-menu-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.external-menu-list::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.external-menu-list::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.external-menu-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 

@@ -1,0 +1,133 @@
+.yaml-editor {
+  background: #23272b;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  border: 1.5px solid #393939;
+}
+
+.yaml-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.yaml-editor-header h3 {
+  color: #ffe082;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.yaml-editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.yaml-button {
+  background: linear-gradient(90deg, #3a3a3a 60%, #444 100%);
+  color: #ffe082;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.yaml-button:hover {
+  background: #ffe082;
+  color: #23272b;
+}
+
+.yaml-button:active {
+  transform: translateY(0);
+}
+
+.yaml-button.edit {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+
+.yaml-button.edit:hover {
+  background-color: #1976D2;
+}
+
+.yaml-button.import {
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.yaml-button.import:hover {
+  background-color: #5a5a5a;
+}
+
+.yaml-button.export {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.yaml-button.export:hover {
+  background-color: #43A047;
+}
+
+/* Override ace editor styles */
+.ace_editor {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  border-radius: 8px;
+  border: 1.5px solid #393939;
+  font-size: 1.1em;
+}
+
+.ace_gutter {
+  background-color: #2d2d2d !important;
+  color: #8f8f8f !important;
+}
+
+.ace_active-line {
+  background-color: #333333 !important;
+}
+
+.ace_cursor {
+  color: #ffffff !important;
+}
+
+/* Custom scrollbar for the editor */
+.ace_scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ace_scrollbar::-webkit-scrollbar-track {
+  background: #23272b;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb {
+  background: #393939;
+  border-radius: 6px;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ffe082;
+}
+
+/* YAML Error Indicator */
+.yaml-error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  padding: 4px 8px;
+  border-radius: 0 0 0 4px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.ace_gutter-cell.ace_error {
+  background-color: rgba(255, 0, 0, 0.1);
+} 

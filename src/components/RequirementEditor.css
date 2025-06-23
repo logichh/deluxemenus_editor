@@ -1,0 +1,68 @@
+.requirement-editor {
+  padding: 15px;
+  background: #2d2d2d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.requirement-editor .form-group {
+  margin-bottom: 15px;
+}
+
+.requirement-editor label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+.requirement-editor select,
+.requirement-editor input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.requirement-editor select {
+  cursor: pointer;
+}
+
+.requirement-editor select:focus,
+.requirement-editor input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.requirement-editor .command-line {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.requirement-editor .command-line input {
+  flex: 1;
+}
+
+.requirement-editor button {
+  padding: 4px 12px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.requirement-editor .command-line button {
+  background: #f44336;
+}
+
+.requirement-editor button:hover {
+  background: #45a049;
+}
+
+.requirement-editor .command-line button:hover {
+  background: #d32f2f;
+} 

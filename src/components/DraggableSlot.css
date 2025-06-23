@@ -1,0 +1,111 @@
+.slot {
+  width: 38px;
+  height: 38px;
+  background: #292c30;
+  border: 2px solid #393939;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 2px;
+  transition: background 0.18s, border 0.18s, box-shadow 0.18s;
+}
+
+.slot.has-item {
+  background: #393939;
+}
+
+.slot:hover {
+  background: #ffe082;
+  border: 2px solid #ffe082;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.slot.selected {
+  background: #b2dfdb;
+  border: 2px solid #81C784;
+  box-shadow: 0 2px 12px rgba(129,199,132,0.18);
+}
+
+.slot.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slot-content {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.item-icon {
+  width: 32px !important;
+  height: 32px !important;
+  image-rendering: pixelated;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.loading-placeholder {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(45deg, #8B8B8B 25%, #9B9B9B 50%, #8B8B8B 75%);
+  background-size: 200% 200%;
+  animation: shimmer 1s infinite;
+  border: 1px solid #373737;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.item-amount {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  color: white;
+  font-size: 12px;
+  text-shadow: 1px 1px 0 #000;
+  font-family: 'Minecraft', monospace;
+  pointer-events: none;
+}
+
+.item-name {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+  font-family: 'Minecraft', monospace;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.slot:hover .item-name {
+  display: block;
+}
+
+.slot.dragging {
+  opacity: 0.5;
+}
+
+.slot.drag-over {
+  background-color: #AAAAAA;
+} 

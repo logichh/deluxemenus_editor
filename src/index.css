@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  font-family: 'Minecraft', monospace;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #444;
+}
+
+.btn:hover {
+  background-color: #3a3a3a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Load button specific style */
+.btn-load {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+}
+
+.btn-load:hover {
+  background-color: #3a3a3a;
+}
+
+.input {
+  background-color: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  font-family: 'Minecraft', monospace;
+  font-size: 0.875rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 50;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 20rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+*:hover > .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* PresetManager Styles */
+.preset-manager {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.preset-manager h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Minecraft', monospace;
+}
+
+.preset-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.preset-list {
+  margin-bottom: 1rem;
+}
+
+.preset-list h3 {
+  font-family: 'Minecraft', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.preset-items {
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.preset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #404040;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.preset-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.preset-name {
+  font-family: 'Minecraft', monospace;
+}
+
+.preset-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.preset-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.file-operations {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.import-section h3 {
+  font-family: 'Minecraft', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,283 @@
+.item-options-panel {
+  padding: 2rem 1.5rem;
+  width: 33vw;
+  min-width: 340px;
+  height: 100%;
+  background: linear-gradient(135deg, #2d2d2d 80%, #23272b 100%);
+  color: #e0e0e0;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1.5px solid #393939;
+  border-top-left-radius: 18px;
+  box-shadow: -8px 0 32px 0 rgba(0,0,0,0.25);
+  z-index: 10;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.item-options-panel h3 {
+  margin-bottom: 2rem;
+  color: #ffe082;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0 0.5rem;
+}
+
+.item-options-panel h4, .item-options-panel h5 {
+  margin: 1.5rem 0 1rem 0;
+  color: #b2dfdb;
+  font-size: 1.15em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1rem;
+  background: #32363a;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 1px solid #393939;
+}
+
+.field-group {
+  margin-bottom: 1.25rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  background: #292c30;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  border: 1px solid #23272b;
+  transition: box-shadow 0.2s;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #b2dfdb;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.field-group input[type="text"],
+.field-group input[type="number"],
+.field-group textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #444;
+  background: #23272b;
+  color: #ffe082;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 0.2rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.field-group input[type="text"]:focus,
+.field-group input[type="number"]:focus,
+.field-group textarea:focus {
+  border: 1.5px solid #81C784;
+  outline: none;
+  box-shadow: 0 0 0 2px #81C78433;
+  background: #262a2e;
+}
+
+.material-selector {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.material-selector input {
+  flex: 1;
+}
+
+.material-selector button {
+  padding: 0.5rem 1.1rem;
+  background: linear-gradient(90deg, #3a3a3a 60%, #444 100%);
+  border: none;
+  color: #ffe082;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+
+.material-selector button:hover {
+  background: #ffe082;
+  color: #23272b;
+}
+
+.array-line {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.array-line input {
+  flex: 1;
+}
+
+.array-line button {
+  padding: 0.3rem 0.7rem;
+  background: #393939;
+  border: none;
+  color: #ffe082;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.array-line button:hover {
+  background: #ffe082;
+  color: #23272b;
+}
+
+/* Nested sections styling */
+.collapsible-section.nested {
+  margin-left: 1.2rem;
+  border-left: 2px solid #444;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.collapsible-section.nested .section-title {
+  font-size: 0.95em;
+  color: #bbb;
+}
+
+/* Command sections styling */
+.command-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.command-section h5 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #bbb;
+  font-size: 1em;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin: 0;
+}
+
+.checkbox-group label {
+  font-size: 1em;
+}
+
+/* Advanced properties styling */
+.advanced-properties {
+  margin-top: 2rem;
+}
+
+/* Plugin integrations styling */
+.plugin-integrations {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Update settings styling */
+.update-settings {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1.5px solid #444;
+}
+
+/* Add button styling */
+button.add-button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #23272b;
+  border: 1.5px dashed #444;
+  color: #ffe082;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+button.add-button:hover {
+  background: #ffe082;
+  color: #23272b;
+  border-color: #ffe082;
+}
+
+/* Custom Tooltip Styles */
+.field-with-tooltip {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.field-with-tooltip label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #A5D6A7;
+  font-size: 1em;
+}
+
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  background: #666;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  cursor: help;
+}
+
+.custom-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  max-width: 250px;
+  padding: 8px 12px;
+  background: #424242;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #e0e0e0;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Modern scrollbar styling */
+.item-options-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.item-options-panel::-webkit-scrollbar-track {
+  background: #23272b;
+}
+
+.item-options-panel::-webkit-scrollbar-thumb {
+  background: #393939;
+  border-radius: 6px;
+}
+
+.item-options-panel::-webkit-scrollbar-thumb:hover {
+  background: #ffe082;
+} 

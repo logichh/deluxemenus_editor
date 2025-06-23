@@ -1,0 +1,8 @@
+{
+  "name": "minecraft-textures",
+  "version": "1.0.0",
+  "description": "Minecraft textures as base64",
+  "main": "index.js",
+  "private": true,
+  "type": "module"
+}
