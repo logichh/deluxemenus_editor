@@ -7,5 +7,5 @@ How to work with this?
 5) for building and an app ready for deploying anywhere, run "npm run build"
 
 
-do not ask me what does what in the code, figure it out yourself
-it is very very spaghetti code
+- do not ask me what does what in the code, figure it out yourself
+- it is very very spaghetti code
